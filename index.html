@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Multi-Tool Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Multi-Tool Hub</h1>
+        <p>مفت AI ٹولز کا مجموعہ</p>
+
+        <!-- Image Generator -->
+        <div class="card">
+            <h2>AI امیج جینیریٹر</h2>
+            <input type="text" id="imgPrompt" placeholder="تصویر کی تفصیل لکھیں...">
+            <button onclick="generateImage()">تصویر بنائیں</button>
+            <div id="imgResult"></div>
+        </div>
+
+        <!-- Voice Generator -->
+        <div class="card">
+            <h2>AI وائس جینیریٹر</h2>
+            <textarea id="textToSpeech" placeholder="آواز میں بدلنے کے لیے متن لکھیں..."></textarea>
+            <button onclick="generateVoice()">آواز تیار کریں</button>
+        </div>
+
+        <!-- Voice Remover -->
+        <div class="card">
+            <h2>AI وائس ریموور</h2>
+            <input type="file" id="audioInput" accept="audio/*">
+            <button onclick="removeVoice()">آواز الگ کریں</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+  </html>
+                                                                                           
